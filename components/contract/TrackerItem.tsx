@@ -12,7 +12,7 @@ const TrackerItem = ({ icon, text, date, first, last }: props) => {
       <div className="flex items-center justify-between py-4">
         <div className="flex items-center gap-2">
           <div className="border-black border-solid border rounded-full p-3 w-12 h-12">
-            <img src={`/${icon}.png`} />
+            <img src={`/tracker-icons/${icon}.png`} />
           </div>
           <p>{text}</p>
         </div>

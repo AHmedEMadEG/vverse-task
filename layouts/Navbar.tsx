@@ -1,6 +1,6 @@
-import Avatar from "@/components/Avatar";
-import BurgerMenu from "@/components/BurgerMenu";
-import NavItem from "@/components/NavItem";
+import Avatar from "@/components/navbar/Avatar";
+import BurgerMenu from "@/components/navbar/BurgerMenu";
+import NavItem from "@/components/navbar/NavItem";
 
 const Navbar = () => {
   return (

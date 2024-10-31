@@ -1,8 +1,7 @@
-import DeliveryFile from "@/components/DeliveryFile";
-import DeliveryGradFile from "@/components/DeliveryGradFile";
-import HorizontalLine from "@/components/HorizontalLine";
-import NavItem from "@/components/NavItem";
-import TrackerItem from "@/components/TrackerItem";
+import DeliveryFile from "@/components/contract/DeliveryFile";
+import DeliveryGradFile from "@/components/contract/DeliveryGradFile";
+import HorizontalLine from "@/components/contract/HorizontalLine";
+import TrackerItem from "@/components/contract/TrackerItem";
 
 const SponsershipContract = () => {
   return (
@@ -80,7 +79,7 @@ const SponsershipContract = () => {
               <div className="collapse-content">
                 <div className="flex">
                   <div className="flex content-center border-black border-solid border rounded-full me-2 p-2 w-10 h-10">
-                    <img src="docs.svg" />
+                    <img src="/deliverables-icons/docs.svg" />
                   </div>
                   <div>
                     <div className="flex-1 border-slate-300 border-solid border px-2 py-4 rounded-lg">
@@ -115,7 +114,7 @@ const SponsershipContract = () => {
                             <DeliveryGradFile icon="video" />
                             <DeliveryGradFile icon="musical" />
                             <DeliveryGradFile icon="video" />
-                            <DeliveryFile icon="docs" />
+                            <DeliveryFile icon="word" />
                             <DeliveryFile icon="excel" />
                             <DeliveryFile icon="word" />
                             <DeliveryFile icon="powerpoint" />
