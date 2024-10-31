@@ -4,7 +4,7 @@ import NavItem from "@/components/NavItem";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto flex justify-between py-2">
+    <div className="container ms-auto flex justify-between py-2">
       <div>
         <img src="/logo.png" alt="logo" width={60} height={60} />
       </div>
@@ -12,8 +12,8 @@ const Navbar = () => {
         <NavItem icon={"search"} />
         <NavItem icon={"add"} />
         <NavItem icon={"notification"} />
-        <NavItem icon={"search"} />
-        <NavItem icon={"add"} />
+        <NavItem icon={"heart"} />
+        <NavItem icon={"cart"} />
         <NavItem icon={"notification"} />
         <NavItem icon={"search"} />
         <NavItem icon={"add"} />
