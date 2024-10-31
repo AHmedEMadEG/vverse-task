@@ -4,7 +4,7 @@ import NavItem from "@/components/navbar/NavItem";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto flex justify-between py-2">
+    <div className="container mx-auto flex justify-between py-1">
       <div>
         <img src="/logo.png" alt="logo" width={60} height={60} />
       </div>

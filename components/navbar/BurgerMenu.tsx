@@ -4,7 +4,7 @@ const BurgerMenu = () => {
       <div tabIndex={0} role="button">
         <svg
           width="60"
-          height="80"
+          height="40"
           viewBox="0 0 60 80"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -25,25 +25,25 @@ const BurgerMenu = () => {
 
           <rect
             x="30"
-            y="25"
-            width="20"
-            height="5"
+            y="20"
+            width="30"
+            height="6"
             rx="2"
             fill="url(#ladderGradient)"
           />
           <rect
             x="20"
-            y="35"
-            width="30"
-            height="5"
+            y="40"
+            width="40"
+            height="6"
             rx="2"
             fill="url(#ladderGradient)"
           />
           <rect
             x="10"
-            y="45"
-            width="40"
-            height="5"
+            y="60"
+            width="50"
+            height="6"
             rx="2"
             fill="url(#ladderGradient)"
           />
@@ -51,7 +51,7 @@ const BurgerMenu = () => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+        className="mt-4 dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
       >
         <li>
           <a>Item 1</a>
