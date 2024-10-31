@@ -18,7 +18,7 @@ const SponsershipContract = () => {
       <div className="flex gap-4">
         <div className="flex-[3] bg-white p-4 border-solid border rounded-lg">
           <div className="border-slate-300 border-solid border p-4 rounded-lg">
-            <details className="collapse collapse-arrow">
+            <details className="collapse collapse-arrow" open>
               <summary className="collapse-title text-xl font-medium">
                 <div className="flex items-center">
                   <p className="me-3 text-transparent bg-clip-text font-bold bg-text-gradient">
@@ -67,7 +67,7 @@ const SponsershipContract = () => {
             </details>
           </div>
           <div className="mt-4 border-slate-300 border-solid border p-4 rounded-lg">
-            <details className="collapse collapse-arrow">
+            <details className="collapse collapse-arrow" open>
               <summary className="collapse-title text-xl font-medium">
                 <div className="flex items-center">
                   <p className="me-3 text-transparent bg-clip-text font-bold bg-text-gradient">
@@ -98,7 +98,7 @@ const SponsershipContract = () => {
                         Obcaecati facilis reprehenderit debitis numquam
                         voluptate culpa.
                       </p>
-                      <details className="collapse">
+                      <details className="collapse" open>
                         <summary className="collapse-title text-xl font-medium">
                           <div className="flex items-center">
                             <div className="flex items-center p-2 me-2 border-solid border rounded-3xl">
