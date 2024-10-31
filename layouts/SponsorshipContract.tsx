@@ -6,12 +6,12 @@ import TrackerItem from "@/components/TrackerItem";
 
 const SponsershipContract = () => {
   return (
-    <div className="container ms-auto mt-6">
+    <div className="container mx-auto mt-6">
       <div className="flex items-center my-4">
         <div className="bg-custom-gradient rounded-full p-2 w-10 h-10 cursor-pointer">
           <img src="left-arrow.png" />
         </div>
-        <div className="mx-3 text-transparent bg-clip-text font-bold bg-text-gradient">
+        <div className="mx-3 font-bold text-2xl text-transparent bg-clip-text bg-text-gradient">
           Sponsorship Contract
         </div>
         <HorizontalLine />
