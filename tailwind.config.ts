@@ -10,9 +10,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(45deg, #1a1a1a, #1a4c95 20%, #8b2f6b 50%, #ef0505)",
+        "text-gradient":
+          "linear-gradient(45deg, #1a1a1a, #1a4c95 20%, #8b2f6b 50%, #ef0505)",
       },
     },
   },

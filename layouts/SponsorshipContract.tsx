@@ -8,10 +8,12 @@ const SponsershipContract = () => {
   return (
     <div className="container ms-auto mt-6">
       <div className="flex items-center my-4">
-        <div className="bg-black rounded-full p-2 w-10 h-10 cursor-pointer">
+        <div className="bg-custom-gradient rounded-full p-2 w-10 h-10 cursor-pointer">
           <img src="left-arrow.png" />
         </div>
-        <div className="mx-3">Sponsorship Contract</div>
+        <div className="mx-3 text-transparent bg-clip-text font-bold bg-text-gradient">
+          Sponsorship Contract
+        </div>
         <HorizontalLine />
       </div>
       <div className="flex gap-4">
@@ -20,7 +22,9 @@ const SponsershipContract = () => {
             <details className="collapse collapse-arrow">
               <summary className="collapse-title text-xl font-medium">
                 <div className="flex items-center">
-                  <p className="me-3">Contract Tracker</p>
+                  <p className="me-3 text-transparent bg-clip-text font-bold bg-text-gradient">
+                    Contract Tracker
+                  </p>
                   <HorizontalLine />
                 </div>
               </summary>
@@ -67,7 +71,9 @@ const SponsershipContract = () => {
             <details className="collapse collapse-arrow">
               <summary className="collapse-title text-xl font-medium">
                 <div className="flex items-center">
-                  <p className="me-3">Contract Deliverables</p>
+                  <p className="me-3 text-transparent bg-clip-text font-bold bg-text-gradient">
+                    Contract Deliverables
+                  </p>
                   <HorizontalLine />
                 </div>
               </summary>
@@ -79,7 +85,7 @@ const SponsershipContract = () => {
                   <div>
                     <div className="flex-1 border-slate-300 border-solid border px-2 py-4 rounded-lg">
                       <div className="flex items-center justify-between mb-3">
-                        <p>Delivery-1</p>
+                        <p className="text-[#1a4c95] font-semibold">Delivery-1</p>
                         <div className="flex items-center">
                           <p>09-sep-2023 05:45 PM</p>
                           <div className="ms-3 bg-violet-900 px-6 py-2 rounded-3xl text-white">
@@ -122,7 +128,7 @@ const SponsershipContract = () => {
                       <button className="text-white bg-violet-900 rounded-3xl px-6 py-2 hover:bg-red-400">
                         Decline
                       </button>
-                      <button className="text-white bg-black rounded-3xl px-6 py-2 hover:bg-green-600">
+                      <button className="text-white bg-custom-gradient rounded-3xl px-6 py-2">
                         Accept
                       </button>
                     </div>
