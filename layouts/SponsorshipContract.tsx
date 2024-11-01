@@ -93,7 +93,7 @@ const SponsershipContract = () => {
                           Delivery-1
                         </p>
                         <div className="flex items-center">
-                          <p>09-sep-2023 05:45 PM</p>
+                          <p className="hidden md:block">09-sep-2023 05:45 PM</p>
                           <div className="ms-3 bg-violet-900 px-6 py-2 rounded-3xl text-white">
                             Pending
                           </div>
@@ -161,8 +161,8 @@ const SponsershipContract = () => {
             </summary>
             <div className="collapse-content">
               <div className="flex gap-2 me-2">
-                <div className="flex justify-center bg-custom-gradient w-14 h-14 rounded-lg p-11">
-                  <img src="/deliverables-icons/docs.svg" />
+                <div className="flex justify-center bg-custom-gradient min-w-10 min-h-10 rounded-lg p-11">
+                  <img src="/deliverables-icons/musical.png" />
                 </div>
                 <p className="text-transparent bg-clip-text bg-text-gradient">
                   &lt;This Will Be Sponsorship Name & It Can Be Over 2 Lines
