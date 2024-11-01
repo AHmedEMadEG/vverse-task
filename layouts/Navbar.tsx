@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="cursor-pointer">
         <img src="/logo.png" alt="logo" width={60} height={60} />
       </div>
-      <div className="flex items-center gap-4">
+      <div className="hidden md:flex items-center gap-4">
         <NavItem icon={"search"} />
         <NavItem icon={"add"} />
         <NavItem icon={"notification"} />
@@ -18,8 +18,8 @@ const Navbar = () => {
         <NavItem icon={"search"} />
         <NavItem icon={"add"} />
         <Avatar />
-        <BurgerMenu />
       </div>
+      <BurgerMenu />
     </div>
   );
 };
