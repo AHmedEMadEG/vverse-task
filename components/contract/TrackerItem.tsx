@@ -11,22 +11,24 @@ const TrackerItem = ({ icon, text, date, first, last }: props) => {
     <>
       <div className="flex items-center justify-between py-4">
         <div className="flex items-center gap-2">
-          <div className="border-black border-solid border rounded-full p-3 w-12 h-12">
-            <img src={`/tracker-icons/${icon}.png`} />
+          <div className="flex items-center border-secondary border-solid border rounded-full p-3">
+            <div className="flex justify-center min-w-10 min-h-10">
+              <img src={`/tracker-icons/${icon}.png`} />
+            </div>
           </div>
           <p>{text}</p>
         </div>
-        <p>
+        <div className="lg:flex items-center gap-2">
           {date}
           {first && (
             <>
-              <span>{" | "}</span>
-              <span className="cursor-pointer text-lg font-bold text-transparent bg-clip-text bg-text-gradient">
+              <div className="hidden lg:block">{" | "}</div>
+              <div className="cursor-pointer text-lg font-bold text-transparent bg-clip-text bg-text-gradient">
                 View Requirements
-              </span>
+              </div>
             </>
           )}
-        </p>
+        </div>
       </div>
       {!last && <hr />}
     </>

@@ -14,10 +14,10 @@ const SponsershipContract = () => {
         <div className="mx-3 font-bold text-2xl text-transparent bg-clip-text bg-text-gradient">
           Sponsorship Contract
         </div>
-        <HorizontalLine />
+        <div className="hidden md:block flex-1 bg-custom-gradient h-[1px]" />
       </div>
       {/* SPONSORSHIP CONTRACT BODY */}
-      <div className="flex gap-4">
+      <div className="xl:flex gap-4">
         {/* LEFT SIDE */}
         <div className="flex-[3] bg-white p-4 border-solid border rounded-lg">
           <div className="border-slate-300 border-solid border p-4 rounded-lg">
@@ -33,14 +33,14 @@ const SponsershipContract = () => {
               <div className="collapse-content">
                 <TrackerItem
                   icon="rocket"
-                  text="Your Contact Started With <V-Customer Name>"
+                  text="Your Contract Started With <V-Customer Name>"
                   date="09-sep-2023 05:45 PM"
                   first={true}
                   last={false}
                 />
                 <TrackerItem
                   icon="correct"
-                  text="Your Contact Started With <V-Customer Name>"
+                  text="Your Contract Started With <V-Customer Name>"
                   date="09-sep-2023 05:45 PM"
                   first={false}
                   last={false}
@@ -81,8 +81,10 @@ const SponsershipContract = () => {
               </summary>
               <div className="collapse-content">
                 <div className="flex">
-                  <div className="flex content-center border-black border-solid border rounded-full me-2 p-2 w-10 h-10">
-                    <img src="/deliverables-icons/docs.svg" />
+                  <div className="flex items-start">
+                    <div className="flex content-center me-2 p-2 border-black border-solid border rounded-full min-w-10 min-h-10">
+                      <img src="/deliverables-icons/docs.svg" />
+                    </div>
                   </div>
                   <div>
                     <div className="flex-1 border-slate-300 border-solid border px-2 py-4 rounded-lg">
@@ -119,7 +121,7 @@ const SponsershipContract = () => {
                           </div>
                         </summary>
                         <div className="collapse-content">
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap justify-center lg:justify-start gap-2">
                             <DeliveryGradFile icon="video" />
                             <DeliveryGradFile icon="musical" />
                             <DeliveryGradFile icon="video" />
@@ -167,7 +169,7 @@ const SponsershipContract = () => {
                   Based On Your Needs&gt;
                 </p>
               </div>
-              <hr />
+              <hr className="my-4"/>
               <div className="mt-2">
                 <div className="flex justify-between py-2">
                   <p className="font-bold text-secondary">Order ID:</p>
@@ -214,9 +216,11 @@ const SponsershipContract = () => {
               </div>
             </summary>
             <div className="collapse-content">
-              <button className="font-semibold text-white bg-custom-gradient rounded-3xl px-1 py-3 w-[100%]">
-                Submit Delivery
-              </button>
+              <div className="flex justify-center">
+                <button className="font-semibold text-white bg-custom-gradient rounded-3xl px-1 py-3 w-[100%] max-w-96">
+                  Submit Delivery
+                </button>
+              </div>
             </div>
           </details>
           <details className="collapse collapse-arrow" open>
@@ -229,37 +233,41 @@ const SponsershipContract = () => {
               </div>
             </summary>
             <div className="collapse-content">
-              <div className="flex items-center gap-2 mb-4">
-                <img
-                  src="/phases-icons/correct-filled.svg"
-                  width={50}
-                  height={50}
-                />
-                <p className="text-xl text-slate-600">Contract Started</p>
-              </div>
-              <div className="flex items-center gap-2 mb-4">
-                <img
-                  src="/phases-icons/correct-filled.svg"
-                  width={50}
-                  height={50}
-                />
-                <p className="text-xl text-slate-600">Contract Requirements</p>
-              </div>
-              <div className="flex items-center gap-2 mb-4">
-                <img
-                  src="/phases-icons/correct-filled.svg"
-                  width={50}
-                  height={50}
-                />
-                <p className="text-xl text-slate-600">Contract In Progress</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <img
-                  src="/phases-icons/exclamation.png"
-                  width={50}
-                  height={50}
-                />
-                <p className="text-xl text-slate-600">Contract Closure</p>
+              <div className="flex flex-col ms-14 sm:ms-48 md:ms-64 lg:ms-96 xl:ms-0">
+                <div className="flex items-center gap-2 mb-4">
+                  <img
+                    src="/phases-icons/correct-filled.svg"
+                    width={50}
+                    height={50}
+                  />
+                  <p className="text-xl text-slate-600">Contract Started</p>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <img
+                    src="/phases-icons/correct-filled.svg"
+                    width={50}
+                    height={50}
+                  />
+                  <p className="text-xl text-slate-600">
+                    Contract Requirements
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <img
+                    src="/phases-icons/correct-filled.svg"
+                    width={50}
+                    height={50}
+                  />
+                  <p className="text-xl text-slate-600">Contract In Progress</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <img
+                    src="/phases-icons/exclamation.png"
+                    width={50}
+                    height={50}
+                  />
+                  <p className="text-xl text-slate-600">Contract Closure</p>
+                </div>
               </div>
             </div>
           </details>
@@ -307,10 +315,15 @@ const SponsershipContract = () => {
                     <p>We Are Always Here For You</p>
                   </div>
                 </div>
-                <hr className="my-2"/>
+                <hr className="my-2" />
                 <div className="flex justify-center">
                   <button className="flex items-center gap-2 text-white bg-custom-gradient rounded-3xl px-6 py-2">
-                  <img src="/support-icons/help-desk.png" width={20} height={20}/> Visit Help Desk
+                    <img
+                      src="/support-icons/help-desk.png"
+                      width={20}
+                      height={20}
+                    />{" "}
+                    Visit Help Desk
                   </button>
                 </div>
               </div>
