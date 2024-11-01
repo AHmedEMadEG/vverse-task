@@ -16,10 +16,10 @@ const BurgerMenu = () => {
               x2="100%"
               y2="0%"
             >
-              <stop offset="0%" stop-color="#1a1a1a" />
-              <stop offset="20%" stop-color="#1a4c95" />
-              <stop offset="50%" stop-color="#8b2f6b" />
-              <stop offset="100%" stop-color="#ff5c5c" />
+              <stop offset="0%" stopColor="#1a1a1a" />
+              <stop offset="20%" stopColor="#1a4c95" />
+              <stop offset="50%" stopColor="#8b2f6b" />
+              <stop offset="100%" stopColor="#ff5c5c" />
             </linearGradient>
           </defs>
 

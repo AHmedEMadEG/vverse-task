@@ -16,6 +16,9 @@ const config: Config = {
         "text-gradient":
           "linear-gradient(45deg, #1a1a1a, #1a4c95 20%, #8b2f6b 50%, #ef0505)",
       },
+      colors: {
+        secondary: "#1a4c95",
+      },
     },
   },
   plugins: [daisyui],
